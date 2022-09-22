@@ -339,15 +339,21 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
-.portfolio-card:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
+.portfolio-card {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .portfolio-section {
   text-align: start;
-  padding: 20px 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
