@@ -134,6 +134,11 @@ ul {
   background-color: var(--footer-background-color);
 }
 
+.hero > .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero-title {
   max-width: 696px;
   margin-bottom: 30px;
@@ -152,6 +157,9 @@ ul {
   min-width: 216px;
   height: 50px;
   display: block;
+  border: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   margin: 0 auto;
   font-family: inherit;
   cursor: pointer;
@@ -196,7 +204,7 @@ ul {
 .features-list,
 .team-list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .main-section.team {
@@ -228,6 +236,12 @@ ul {
   padding-bottom: 94px;
 }
 
+.feature-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .features-title {
   margin-bottom: 50px;
 }
@@ -237,19 +251,19 @@ ul {
   padding-top: 94px;
 }
 
+.team-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-title {
   margin-bottom: 50px;
 }
 
 .team-card {
-  padding-bottom: 30px;
   background-color: var(--primary-white-color);
   text-align: center;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.card-image {
-  margin-bottom: 30px;
 }
 
 .card-title {
@@ -318,6 +332,8 @@ ul {
 }
 
 .filter-button {
+  border: transparent;
+  border-radius: 4px;
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -337,6 +353,8 @@ ul {
 .filter-button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio {
